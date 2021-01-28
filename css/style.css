@@ -18,5 +18,120 @@ main{
   display: table;
   clear: both;
 }
+  /* Colonna float 2pz proprietà generali */
+.aside{
+  width: 50%;
+  float: left;
+  min-height: 40px;
+  padding: 25px 0;
+}
 
 /* Proprietà header */
+  /* Il contenuto dell'aside DX dentro header si allinea a DX */
+header .clearfix > .aside:last-child{
+  text-align: right;
+}
+@media screen and (max-width: 646px){
+  header .aside:last-child button{
+    margin-bottom: 10px;
+  }
+  header .clearfix > .aside:last-child {
+    text-align: center;
+  }
+}
+
+header .clearfix:first-child{
+  background-color: rgb(240,248,255);
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+  /* Links navbar  */
+header a{
+  font-size: 15px;
+  color: rgb(10,50,90);
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 42px;
+}
+header a:hover{
+  color: darkturquoise;
+}
+
+  /* Icona seacrh header */
+#search{
+   color: darkturquoise;
+ }
+
+ /* Bottoni */
+ .button, .button-rev{
+    min-height: 40px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 15px;
+ }
+.button:hover, .button-rev:hover, #search:hover{
+  transition: opacity 0.1s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.button:focus, .button-rev:focus{
+  outline: none;
+}
+.button:active, .button-rev:active{
+  opacity: 0.2;
+  color: #cecece;
+}
+  /* Bottone arancio */
+.button{
+  color: white;
+  background-color: darkorange;
+}
+  /* Bottone arancio reverse */
+.button-rev{
+  margin: 0 20px;
+  color: darkorange;
+  background-color: white;
+  border-color: darkorange;
+}
+
+/* Lista navbar */
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  display: inline-block;
+  margin-right: 10px;
+}
+nav li:last-child{
+  margin-right: 0;
+}
+li i{
+  margin-left: 12px;
+}
+/* Separatori */
+  /* Sep. verticale */
+.vert-division{
+  border-left: 2px solid rgb(10,50,90);
+  margin: 0 10px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+  /* Sparisce a px <= 470 */
+@media screen and (max-width: 470px){
+  .vert-division{
+    visibility: hidden;
+  }
+}
+  /* Sep. orizzontale */
+.oriz-division{
+  border-bottom: 2px solid rgb(10,50,90);
+  width: 100%;
+}
