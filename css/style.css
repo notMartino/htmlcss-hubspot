@@ -323,3 +323,41 @@ li i{
 .aside.side p, .aside.center p, .aside.side ul,  .aside.center ul{
   margin-bottom: 50px;
 }
+
+/* Riga simil-tabellare verde */
+.tab{
+  background-color: aqua;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.tab h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.tab p{
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.tab .row{
+  width: 100%;
+}
+.tab .row:last-child{
+  border-top: 1px solid white;
+  margin-bottom: 50px;
+}
+.tab .column{
+  width: 25%;
+  float: left;
+  border-right: 1px solid white;
+  padding: 20px;
+}
+.tab .row > .column:last-child{
+  border-right: 0px;
+}
+.tab .number{
+  margin: 10px 0;
+  font-size: 40px;
+  font-weight: bold;
+}
