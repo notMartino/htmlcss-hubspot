@@ -18,24 +18,26 @@ main{
   display: table;
   clear: both;
 }
-  /* Colonna float 2pz proprietà generali */
-.aside{
+
+
+/* Proprietà header */
+  /* Il contenuto dell'aside DX dentro header si allinea a DX */
+.nav-aside{
   width: 50%;
   float: left;
   min-height: 40px;
   padding: 25px 0;
+  color: rgb(10,50,90);
 }
 
-/* Proprietà header */
-  /* Il contenuto dell'aside DX dentro header si allinea a DX */
-header .clearfix > .aside:last-child{
+header .clearfix > .nav-aside:last-child{
   text-align: right;
 }
 @media screen and (max-width: 646px){
   header .aside:last-child button{
     margin-bottom: 10px;
   }
-  header .clearfix > .aside:last-child {
+  header .clearfix > .nav-aside:last-child {
     text-align: center;
   }
 }
@@ -78,21 +80,26 @@ header img{
  /* Bottoni */
  .button, .button-rev{
     min-height: 40px;
-    padding: 10px;
+    padding: 0 10px;
     border: 2px solid transparent;
     border-radius: 5px;
     font-size: 15px;
     font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
  }
-.button:hover, .button-rev:hover{
+a.button:hover, a.button-rev:hover{
   transition: opacity 0.1s;
   opacity: 0.5;
   cursor: pointer;
+  color: #cecece;
 }
-.button:focus, .button-rev:focus{
+a.button:focus, a.button-rev:focus{
   outline: none;
 }
-.button:active, .button-rev:active{
+a.button:active, a.button-rev:active{
   opacity: 0.2;
   color: #cecece;
 }
@@ -103,10 +110,15 @@ header img{
 }
   /* Bottone arancio reverse */
 .button-rev{
-  margin: 0 20px;
   color: darkorange;
   background-color: white;
   border-color: darkorange;
+  margin: 0 20px;
+}
+@media screen and (max-width: 672px){
+  .button-rev{
+    margin-bottom: 10px;
+  }
 }
 
 /* Lista navbar */
@@ -140,7 +152,8 @@ li i{
 }
   /* Sep. orizzontale */
 .oriz-division{
-  border-bottom: 2px solid rgb(10,50,90);
+  border-bottom: 1px solid rgb(10,50,90);
+  border-top: 1px solid rgb(10,50,90);
   width: 100%;
 }
 
@@ -156,7 +169,7 @@ li i{
   background-repeat: no-repeat;
   overflow: hidden;
 }
-@media screen and (max-width: 683px) {
+@media screen and (max-width: 697px) {
   .jumborow{
     margin-top: 227px;
   }
@@ -199,8 +212,8 @@ li i{
 .jumborow .button{
   min-height: 60px;
   width: 200px;
+  line-height: 60px;
 }
-
   /* Banda verde */
 #banda{
   position: absolute;
@@ -212,4 +225,101 @@ li i{
   background-color: #a6e8e0;
   border-bottom: 3px solid rgb(10,50,90);
   border-top: 3px solid rgb(10,50,90);
+}
+
+/* Riga slogan cube */
+.slogan{
+  text-align: center;
+  color: rgb(10,50,90);
+  padding: 40px 20%;
+}
+.slogan img{
+  height: 200px;
+}
+.slogan h2{
+  margin-bottom: 20px;
+}
+
+/* Colonna float proprietà generali */
+.aside{
+  width: 50%;
+  float: left;
+  padding: 20px;
+  color: rgb(10,50,90);
+  overflow: hidden;
+}
+/* Colonna float proprietà contenuto */
+.aside h2{
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+.aside h3{
+  font-size: 21px;
+  margin: 30px 0;
+  font-size: 18px;
+}
+.aside .button{
+  min-width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+.aside .img100{
+  height: 100px;
+  margin-bottom: 20px;
+}
+.aside .icon{
+  color: #e96545;
+  margin-right: 10px;
+}
+.aside ul{
+  list-style-type: none;
+  text-align: left;
+}
+.whiteback{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 0px #cecece;
+  margin-bottom: 40px;
+}
+
+/* Riga CRM 2 sezioni 70/30 */
+.aside.trenta{
+  width: 30%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.aside.settanta{
+  width: 70%;
+  padding: 40px 40px 40px 20px;
+}
+.settanta .oriz-division{
+  width: ;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+}
+.settanta h3{
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.settanta p{
+  width: 80%;
+}
+.settanta li{
+  display: inline-block;
+}
+
+/* Riga 3 colonne Hubs */
+.aside.side, .aside.center{
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+}
+.aside.center{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.aside.side p, .aside.center p, .aside.side ul,  .aside.center ul{
+  margin-bottom: 50px;
 }
