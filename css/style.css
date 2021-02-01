@@ -326,7 +326,7 @@ li i{
 
 /* Riga simil-tabellare verde */
 .tab{
-  background-color: aqua;
+  background: linear-gradient(to top right, #00a9ba 25%, #00b0b2 50%, #00b7ab 75%, #00bca6 100%);
   text-align: center;
   color: white;
   font-weight: bold;
@@ -352,6 +352,7 @@ li i{
   float: left;
   border-right: 1px solid white;
   padding: 20px;
+  overflow: hidden;
 }
 .tab .row > .column:last-child{
   border-right: 0px;
@@ -360,4 +361,67 @@ li i{
   margin: 10px 0;
   font-size: 40px;
   font-weight: bold;
+}
+
+/* Riga partners */
+.white{
+  background-color: white;
+}
+.white .clearfix:first-child h2{
+  width: 50%;
+  font-size: 40px;
+  text-align: left;
+  margin: 0 auto 20px;
+}
+.white .clearfix:first-child p{
+  font-size: 13px;
+  width: 50%;
+  margin:   auto;
+  text-align: left;
+}
+
+.riga-img{
+  height: 50px;
+  line-height: 50px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+.colonna-img{
+  float: right;
+  width: 150px;
+  /* width: calc(25% - 20px); */
+  margin: 0px 15px 20px;
+}
+.colonna-img > img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+#alignsx{
+  text-align: left;
+  width: 40%
+}
+#alignsx p{
+  margin-bottom: 40px;
+}
+#alignsx p:last-child{
+  font-size: 14px;
+  margin-top: 40px;
+}
+#aligndx{
+  text-align: right;
+  margin-right: 0;
+  width: 60%;
+}
+#aligndx > img{
+  width: 40%;
+  min-width: 180px;
+  max-width: 300px;
+}
+
+/* Proprietà footer */
+footer{
+  background-color: rgb(50, 75, 100);
+  min-height: 100px;
+  
 }
