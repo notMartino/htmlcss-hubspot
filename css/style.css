@@ -125,7 +125,7 @@ a.button:active, a.button-rev:active{
 nav ul{
   list-style-type: none;
 }
-nav li{
+header nav li{
   display: inline-block;
   margin-right: 10px;
 }
@@ -421,7 +421,52 @@ li i{
 
 /* Proprietà footer */
 footer{
-  background-color: rgb(50, 75, 100);
+  background-color: rgb(55, 75, 100);
   min-height: 100px;
-  
+  color: white;
+}
+
+.aside.twentyfive{
+  width: calc(25% - 20px);
+  margin: 10px 20px 0 0;
+  color: white;
+}
+.twentyfive li{
+  margin: 15px 0;
+}
+footer a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+footer a:hover{
+  color: grey;
+}
+.twentyfive .button{
+  color: rgb(55, 75, 100);
+  background-color: white;
+}
+.twentyfive li > ul > li, .lingue li{
+  display: inline-block;
+}
+.twentyfive i{
+  margin: 0 8px;
+}
+.lingue{
+  text-align: center;
+  margin: 30px 0;
+}
+.lingue li{
+  margin: 0 20px 20px;
+}
+
+footer .clearfix:last-child .aside{
+  color: white;
+  padding: 0;
+  margin-bottom: 40px;
+}
+footer .clearfix:last-child .aside:last-child{
+  text-align: right;
+}
+footer .clearfix:last-child .aside:last-child a{
+  margin-left: 15px;
 }
