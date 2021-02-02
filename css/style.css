@@ -447,7 +447,9 @@ footer a:hover{
 .twentyfive .button{
   color: rgb(55, 75, 100);
   background-color: white;
-  min-width: 190px;
+  min-width: 180px;
+  font-size: 14px;
+  padding: 0 3px;
 }
 .twentyfive li > ul > li, .lingue li{
   display: inline-block;
